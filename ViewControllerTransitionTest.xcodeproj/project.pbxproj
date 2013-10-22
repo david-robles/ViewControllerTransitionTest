@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630800CB1816121700A89F5B /* PercentDrivenTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630800CA1816121700A89F5B /* PercentDrivenTransitionController.m */; };
+		630800CE181722BA00A89F5B /* UIView+AnimationOptionsWithCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 630800CD181722BA00A89F5B /* UIView+AnimationOptionsWithCurve.m */; };
 		63C6CAA11810962A00104EFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C6CAA01810962A00104EFF /* Foundation.framework */; };
 		63C6CAA31810962A00104EFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C6CAA21810962A00104EFF /* CoreGraphics.framework */; };
 		63C6CAA51810962A00104EFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C6CAA41810962A00104EFF /* UIKit.framework */; };
@@ -14,13 +16,15 @@
 		63C6CAAD1810962A00104EFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C6CAAC1810962A00104EFF /* main.m */; };
 		63C6CAB11810962A00104EFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C6CAB01810962A00104EFF /* AppDelegate.m */; };
 		63C6CAB41810962A00104EFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C6CAB21810962A00104EFF /* Main.storyboard */; };
-		63C6CAB71810962A00104EFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C6CAB61810962A00104EFF /* ViewController.m */; };
+		63C6CAB71810962A00104EFF /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C6CAB61810962A00104EFF /* ContentViewController.m */; };
 		63C6CAB91810962A00104EFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C6CAB81810962A00104EFF /* Images.xcassets */; };
 		63C6CAC01810962B00104EFF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C6CABF1810962B00104EFF /* XCTest.framework */; };
 		63C6CAC11810962B00104EFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C6CAA01810962A00104EFF /* Foundation.framework */; };
 		63C6CAC21810962B00104EFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C6CAA41810962A00104EFF /* UIKit.framework */; };
 		63C6CACA1810962B00104EFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63C6CAC81810962B00104EFF /* InfoPlist.strings */; };
 		63C6CACC1810962B00104EFF /* ViewControllerTransitionTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C6CACB1810962B00104EFF /* ViewControllerTransitionTestTests.m */; };
+		63C6CAD718109B0E00104EFF /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C6CAD618109B0E00104EFF /* TransitionController.m */; };
+		63C6CADA18109C9300104EFF /* RootContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C6CAD918109C9300104EFF /* RootContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630800C91816121700A89F5B /* PercentDrivenTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PercentDrivenTransitionController.h; sourceTree = "<group>"; };
+		630800CA1816121700A89F5B /* PercentDrivenTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PercentDrivenTransitionController.m; sourceTree = "<group>"; };
+		630800CC181722BA00A89F5B /* UIView+AnimationOptionsWithCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationOptionsWithCurve.h"; sourceTree = "<group>"; };
+		630800CD181722BA00A89F5B /* UIView+AnimationOptionsWithCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationOptionsWithCurve.m"; sourceTree = "<group>"; };
 		63C6CA9D1810962A00104EFF /* ViewControllerTransitionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerTransitionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C6CAA01810962A00104EFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63C6CAA21810962A00104EFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +53,18 @@
 		63C6CAAF1810962A00104EFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		63C6CAB01810962A00104EFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		63C6CAB31810962A00104EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		63C6CAB51810962A00104EFF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		63C6CAB61810962A00104EFF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		63C6CAB51810962A00104EFF /* ContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		63C6CAB61810962A00104EFF /* ContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		63C6CAB81810962A00104EFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		63C6CABE1810962B00104EFF /* ViewControllerTransitionTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerTransitionTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C6CABF1810962B00104EFF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		63C6CAC71810962B00104EFF /* ViewControllerTransitionTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewControllerTransitionTestTests-Info.plist"; sourceTree = "<group>"; };
 		63C6CAC91810962B00104EFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63C6CACB1810962B00104EFF /* ViewControllerTransitionTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTransitionTestTests.m; sourceTree = "<group>"; };
+		63C6CAD518109B0E00104EFF /* TransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
+		63C6CAD618109B0E00104EFF /* TransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionController.m; sourceTree = "<group>"; };
+		63C6CAD818109C9300104EFF /* RootContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootContentViewController.h; sourceTree = "<group>"; };
+		63C6CAD918109C9300104EFF /* RootContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootContentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +127,16 @@
 				63C6CAAF1810962A00104EFF /* AppDelegate.h */,
 				63C6CAB01810962A00104EFF /* AppDelegate.m */,
 				63C6CAB21810962A00104EFF /* Main.storyboard */,
-				63C6CAB51810962A00104EFF /* ViewController.h */,
-				63C6CAB61810962A00104EFF /* ViewController.m */,
+				63C6CAB51810962A00104EFF /* ContentViewController.h */,
+				63C6CAB61810962A00104EFF /* ContentViewController.m */,
+				63C6CAD818109C9300104EFF /* RootContentViewController.h */,
+				63C6CAD918109C9300104EFF /* RootContentViewController.m */,
+				63C6CAD518109B0E00104EFF /* TransitionController.h */,
+				63C6CAD618109B0E00104EFF /* TransitionController.m */,
+				630800C91816121700A89F5B /* PercentDrivenTransitionController.h */,
+				630800CA1816121700A89F5B /* PercentDrivenTransitionController.m */,
+				630800CC181722BA00A89F5B /* UIView+AnimationOptionsWithCurve.h */,
+				630800CD181722BA00A89F5B /* UIView+AnimationOptionsWithCurve.m */,
 				63C6CAB81810962A00104EFF /* Images.xcassets */,
 				63C6CAA71810962A00104EFF /* Supporting Files */,
 			);
@@ -249,7 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63C6CAB71810962A00104EFF /* ViewController.m in Sources */,
+				630800CE181722BA00A89F5B /* UIView+AnimationOptionsWithCurve.m in Sources */,
+				63C6CAD718109B0E00104EFF /* TransitionController.m in Sources */,
+				63C6CAB71810962A00104EFF /* ContentViewController.m in Sources */,
+				630800CB1816121700A89F5B /* PercentDrivenTransitionController.m in Sources */,
+				63C6CADA18109C9300104EFF /* RootContentViewController.m in Sources */,
 				63C6CAB11810962A00104EFF /* AppDelegate.m in Sources */,
 				63C6CAAD1810962A00104EFF /* main.m in Sources */,
 			);
@@ -460,6 +484,7 @@
 				63C6CAD11810962B00104EFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63C6CAD21810962B00104EFF /* Build configuration list for PBXNativeTarget "ViewControllerTransitionTestTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +493,7 @@
 				63C6CAD41810962B00104EFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
