@@ -68,7 +68,9 @@
 
 - (void)animationEnded:(BOOL) transitionCompleted {
     NSLog(@"completed: %@", transitionCompleted ? @"YES": @"NO");
+    
     _context = nil;
+    _isInteractive = NO;
 }
 
 #pragma mark - UIViewControllerInteractiveTransitioning methods
@@ -157,7 +159,6 @@
             fromView.transform = CGAffineTransformMakeScale(0.0, 0.0);
         } completion:^(BOOL finished) {
             [_context completeTransition:YES]; // [UIViewControllerContextTransitioning completeTransition:] takes care of removing the from view controller's view from the view hierarchy
-            [self endAnimation];
         }];
     }
     else {
@@ -168,7 +169,6 @@
             fromView.transform = CGAffineTransformMakeScale(1.0, 1.0);
         } completion:^(BOOL finished) {
             [_context completeTransition:NO]; // [UIViewControllerContextTransitioning completeTransition:] takes care of removing the from view controller's view from the view hierarchy
-            [self endAnimation];
         }];
     }
 }
@@ -176,11 +176,6 @@
 - (CGFloat)completionDuration {
     CGFloat retFloat = (_percentComplete * [self transitionDuration:_context]) / [self completionSpeed];
     return retFloat;
-}
-
-- (void)endAnimation {
-    _context = nil;
-    _isInteractive = NO;
 }
 
 @end
