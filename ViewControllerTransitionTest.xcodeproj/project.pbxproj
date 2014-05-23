@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		630800CB1816121700A89F5B /* PercentDrivenTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630800CA1816121700A89F5B /* PercentDrivenTransitionController.m */; };
 		630800CE181722BA00A89F5B /* UIView+AnimationOptionsWithCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 630800CD181722BA00A89F5B /* UIView+AnimationOptionsWithCurve.m */; };
+		635101B2191D46E100FE4B4F /* DebugView.m in Sources */ = {isa = PBXBuildFile; fileRef = 635101B1191D46E100FE4B4F /* DebugView.m */; };
+		635101B6191D4A4400FE4B4F /* DebugNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635101B5191D4A4400FE4B4F /* DebugNavigationController.m */; };
 		63C6CAA11810962A00104EFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C6CAA01810962A00104EFF /* Foundation.framework */; };
 		63C6CAA31810962A00104EFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C6CAA21810962A00104EFF /* CoreGraphics.framework */; };
 		63C6CAA51810962A00104EFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C6CAA41810962A00104EFF /* UIKit.framework */; };
@@ -42,6 +44,11 @@
 		630800CA1816121700A89F5B /* PercentDrivenTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PercentDrivenTransitionController.m; sourceTree = "<group>"; };
 		630800CC181722BA00A89F5B /* UIView+AnimationOptionsWithCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationOptionsWithCurve.h"; sourceTree = "<group>"; };
 		630800CD181722BA00A89F5B /* UIView+AnimationOptionsWithCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationOptionsWithCurve.m"; sourceTree = "<group>"; };
+		635101B0191D46E100FE4B4F /* DebugView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugView.h; sourceTree = "<group>"; };
+		635101B1191D46E100FE4B4F /* DebugView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugView.m; sourceTree = "<group>"; };
+		635101B4191D4A4400FE4B4F /* DebugNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugNavigationController.h; sourceTree = "<group>"; };
+		635101B5191D4A4400FE4B4F /* DebugNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugNavigationController.m; sourceTree = "<group>"; };
+		63578167191D4F2700D91757 /* UINavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UINavigationController.h; sourceTree = "<group>"; };
 		63C6CA9D1810962A00104EFF /* ViewControllerTransitionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerTransitionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C6CAA01810962A00104EFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63C6CAA21810962A00104EFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,6 +98,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		635101B3191D4A1F00FE4B4F /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				635101B0191D46E100FE4B4F /* DebugView.h */,
+				635101B1191D46E100FE4B4F /* DebugView.m */,
+				635101B4191D4A4400FE4B4F /* DebugNavigationController.h */,
+				635101B5191D4A4400FE4B4F /* DebugNavigationController.m */,
+				63578167191D4F2700D91757 /* UINavigationController.h */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
 		63C6CA941810962A00104EFF = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +152,7 @@
 				63C6CAD918109C9300104EFF /* RootContentViewController.m */,
 				63C6CAD518109B0E00104EFF /* TransitionController.h */,
 				63C6CAD618109B0E00104EFF /* TransitionController.m */,
+				635101B3191D4A1F00FE4B4F /* Debug */,
 				630800C91816121700A89F5B /* PercentDrivenTransitionController.h */,
 				630800CA1816121700A89F5B /* PercentDrivenTransitionController.m */,
 				630800CC181722BA00A89F5B /* UIView+AnimationOptionsWithCurve.h */,
@@ -269,9 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635101B2191D46E100FE4B4F /* DebugView.m in Sources */,
 				630800CE181722BA00A89F5B /* UIView+AnimationOptionsWithCurve.m in Sources */,
 				63C6CAD718109B0E00104EFF /* TransitionController.m in Sources */,
 				63C6CAB71810962A00104EFF /* ContentViewController.m in Sources */,
+				635101B6191D4A4400FE4B4F /* DebugNavigationController.m in Sources */,
 				630800CB1816121700A89F5B /* PercentDrivenTransitionController.m in Sources */,
 				63C6CADA18109C9300104EFF /* RootContentViewController.m in Sources */,
 				63C6CAB11810962A00104EFF /* AppDelegate.m in Sources */,

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Sge-CS-eMl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Sge-CS-eMl">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Root Content View Controller-->
@@ -12,7 +12,7 @@
                         <viewControllerLayoutGuide type="top" id="UA9-Ka-3vY"/>
                         <viewControllerLayoutGuide type="bottom" id="iAD-Aw-DCf"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="DebugView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -50,7 +50,7 @@
                         <viewControllerLayoutGuide type="top" id="bKU-S9-ufd"/>
                         <viewControllerLayoutGuide type="bottom" id="Nuy-Ye-k20"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tMp-9p-ydl">
+                    <view key="view" contentMode="scaleToFill" id="tMp-9p-ydl" customClass="DebugView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="1392" y="91"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Debug Navigation Controller-->
         <scene sceneID="5kP-oB-eyY">
             <objects>
-                <navigationController definesPresentationContext="YES" id="Sge-CS-eMl" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="Sge-CS-eMl" customClass="DebugNavigationController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="oEl-45-ixJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2DA-fC-E9k">
                         <autoresizingMask key="autoresizingMask"/>

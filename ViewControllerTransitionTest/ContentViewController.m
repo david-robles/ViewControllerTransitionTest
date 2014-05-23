@@ -53,5 +53,16 @@
     }
 }
 
+- (void)didMoveToParentViewController:(UIViewController *)parent {
+    [super didMoveToParentViewController:parent];
+}
+
+- (void)willMoveToParentViewController:(UIViewController *)parent {
+    [super willMoveToParentViewController:parent];
+}
+
+- (void)removeFromParentViewController {
+    [super removeFromParentViewController];
+}
 
 @end

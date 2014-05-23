@@ -66,5 +66,23 @@
     return nil;
 }
 
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    NSLog(@"\n\nwillShowViewController: %@\n", viewController.description);
+}
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    NSLog(@"\n\ndidShowViewController: %@\n", viewController.description);
+}
+
+- (void)didMoveToParentViewController:(UIViewController *)parent {
+    [super didMoveToParentViewController:parent];
+}
+
+- (void)willMoveToParentViewController:(UIViewController *)parent {
+    [super willMoveToParentViewController:parent];
+}
+
+- (void)removeFromParentViewController {
+    [super removeFromParentViewController];
+}
 
 @end
