@@ -21,11 +21,19 @@
 }
 
 - (void)viewWillLayoutSubviews {
-    
+    [super viewWillLayoutSubviews];
 }
 
 - (void)viewDidLayoutSubviews {
-    
+    [super viewDidLayoutSubviews];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
 }
 
 - (IBAction)pushMoreContentButtonTapped:(id)sender {
